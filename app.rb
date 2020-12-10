@@ -1,3 +1,5 @@
+require 'pry'
+
 class Company
     attr_accessor :name, :size
 
@@ -14,3 +16,8 @@ companies = [
 ]
 
 ### Your code below this
+def list_of_companies(array)
+    array.each do {|company| puts "#{company.name} - #{company.size}"}
+end
+binding.pry
+0
